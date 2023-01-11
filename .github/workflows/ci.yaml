@@ -20,7 +20,7 @@ jobs:
       - name: built and test
         run: |
           pod install --project-directory=MovieCatalogue
-          xcodebuild clean build test -workspace MovieCatalogue/MovieCatalogueWithModular.xcworkspace -scheme MovieCatalogue -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2' -enableCodeCoverage YES API_KEY=$API_KEY
+          xcodebuild clean build test -workspace MovieCatalogue/MovieCatalogueWithModular.xcworkspace -scheme MovieCatalogue -destination 'platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device' -enableCodeCoverage YES API_KEY=$API_KEY 
         env:
           API_KEY: ${{ secrets.API_KEY }}
 
