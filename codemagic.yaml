@@ -8,8 +8,12 @@ workflows:
           XCODE_PROJECT: "MovieCatalogue/MovieCatalogue.xcodeproj" # Isikan nama project Anda.
           XCODE_SCHEME: "MovieCatalogue" # Isikan nama scheme project Anda.
     scripts:
+      - name: Install Cocoapods
+        script: |
+          gem install cocoapods
       - name: Run tests
         script: |
+          pod install --project-directory=MovieCatalogue
           xcodebuild \
           -project "$XCODE_PROJECT" \
           -scheme "$XCODE_SCHEME" \
