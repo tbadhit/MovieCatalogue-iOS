@@ -13,6 +13,8 @@ workflows:
           gem install cocoapods
       - name: Run tests
         script: |
+          pod install --project-directory=Core
+          pod install --project-directory=Movie
           pod install --project-directory=MovieCatalogue
           xcodebuild \
           -project "$XCODE_PROJECT" \
