@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '16.0'
+
+use_frameworks!
+workspace 'MovieCatalogueWithModular'
+
+target 'MovieCatalogue' do
+  # Comment the next line if you don't want to use dynamic frameworks
+
+  # Pods for MovieCatalogue
+  pod 'SwiftLint'
+  pod 'Alamofire'
+  pod 'RealmSwift', '~>10'
+
+  target 'MovieCatalogueTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MovieCatalogueUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'Core' do
+  project '../Core/Core'
+end
+
+target 'Movie' do
+  project '../Movie/Movie'
+end

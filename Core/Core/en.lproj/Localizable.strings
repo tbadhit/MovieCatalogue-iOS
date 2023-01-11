@@ -1,0 +1,10 @@
+"movies_title" = "Movies";
+"favorite_title" = "Favorites";
+"profile_title" = "Profile";
+"empty_favorite_message" = "Favorite is empty";
+"home_tabbar" = "Home";
+"search_tabbar" = "Search";
+"favorite_tabbar" = "Favorite";
+"profile_tabbar" = "Profile";
+"search_message" = "Not Found";
+"search_info" = "Search";
