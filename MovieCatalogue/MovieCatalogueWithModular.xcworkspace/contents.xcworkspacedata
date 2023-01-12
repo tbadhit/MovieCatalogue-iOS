@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Core/Core.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:MovieCatalogue.xcodeproj">
    </FileRef>
    <FileRef

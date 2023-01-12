@@ -11,6 +11,7 @@ target 'MovieCatalogue' do
   pod 'SwiftLint'
   pod 'Alamofire'
   pod 'RealmSwift', '~>10'
+  pod 'Core', :git => "https://github.com/tbadhit/Modularization-Core-Module.git"
 
   target 'MovieCatalogueTests' do
     inherit! :search_paths
@@ -23,15 +24,10 @@ target 'MovieCatalogue' do
 
 end
 
-target 'Core' do
-  project '../Core/Core'
-  pod 'SwiftLint'
-  pod 'RealmSwift', '~>10'
-end
-
 target 'Movie' do
   project '../Movie/Movie'
   pod 'SwiftLint'
   pod 'Alamofire'
   pod 'RealmSwift', '~>10'
+  pod 'Core', :git => "https://github.com/tbadhit/Modularization-Core-Module.git"
 end
