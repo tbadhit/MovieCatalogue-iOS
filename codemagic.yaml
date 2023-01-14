@@ -7,7 +7,7 @@ workflows:
       vars:
           # XCODE_PROJECT: "MovieCatalogue/MovieCatalogue.xcodeproj" # Isikan nama project Anda.
           XCODE_SCHEME: "MovieCatalogue" # Isikan nama scheme project Anda.
-          XCODE_WORKSPACE: "MovieCatalogueWithModular.xcworkspace" # Isikan nama workspace project Anda.
+          XCODE_WORKSPACE: "MovieCatalogue/MovieCatalogueWithModular.xcworkspace" # Isikan nama workspace project Anda.
     scripts:
       - name: Install Cocoapods
         script: |
