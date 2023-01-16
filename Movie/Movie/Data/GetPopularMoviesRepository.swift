@@ -40,7 +40,6 @@ Transformer.Domains == [MovieModel]{
         _mapper = mapper
     }
     public func execute(request: Any?) -> AnyPublisher<[MovieModel], Error> {
-        print("Masuk repo di movie")
         return _localeDataSource.list(request: nil)
             .flatMap { result -> AnyPublisher<[MovieModel], Error> in
                 if result.isEmpty {

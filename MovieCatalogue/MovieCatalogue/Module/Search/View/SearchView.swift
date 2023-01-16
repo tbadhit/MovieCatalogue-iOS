@@ -36,12 +36,12 @@ struct SearchView: View {
                     if presenter.keyword.isEmpty {
                         Spacer()
                         Spacer()
-                        Text("search_info".localized(identifier: "tbadhit.Core"))
+                        Text("Search")
                         Spacer()
                     } else if presenter.list.isEmpty {
                         Spacer()
                         Spacer()
-                        Text("search_message".localized(identifier: "tbadhit.Core"))
+                        Text("Not Found")
                         Spacer()
                     } else {
                         List {

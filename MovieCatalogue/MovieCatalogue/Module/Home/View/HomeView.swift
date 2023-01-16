@@ -61,7 +61,7 @@ struct HomeView: View {
                 }
             }
             .navigationBarTitleDisplayMode(.large)
-            .navigationTitle("movies_title".localized(identifier: "tbadhit.Core"))
+            .navigationTitle("Movies")
             .onAppear {
                 self.presenter.getList(request: nil)
             }

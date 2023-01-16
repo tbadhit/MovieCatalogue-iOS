@@ -26,7 +26,7 @@ struct ProfileView: View {
                 Spacer()
             }
             .padding(.top, 50)
-            .navigationTitle("profile_title".localized(identifier: "tbadhit.Core"))
+            .navigationTitle("Profiles")
         }
         
     }

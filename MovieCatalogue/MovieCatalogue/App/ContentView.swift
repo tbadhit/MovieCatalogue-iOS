@@ -48,19 +48,19 @@ struct ContentView: View {
         TabView {
             HomeView(presenter: presenter)
                 .tabItem {
-                    Label("home_tabbar".localized(identifier: "tbadhit.Core"), systemImage: "house.fill")
+                    Label("Home", systemImage: "house.fill")
                 }
             SearchView(presenter: searchPresenter)
                 .tabItem {
-                    Label("search_tabbar".localized(identifier: "tbadhit.Core"), systemImage: "magnifyingglass")
+                    Label("Search", systemImage: "magnifyingglass")
                 }
             FavoriteView(presenter: favoritePresenter)
                 .tabItem {
-                    Label("favorite_tabbar".localized(identifier: "tbadhit.Core"), systemImage: "heart")
+                    Label("Favorite", systemImage: "heart")
                 }
             ProfileView()
                 .tabItem {
-                    Label("profile_tabbar".localized(identifier: "tbadhit.Core"), systemImage: "person.crop.circle.fill")
+                    Label("Profile", systemImage: "person.crop.circle.fill")
                 }
         }
     }

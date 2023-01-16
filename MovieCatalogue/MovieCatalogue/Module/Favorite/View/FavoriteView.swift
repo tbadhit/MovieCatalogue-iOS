@@ -31,7 +31,7 @@ struct FavoriteView: View {
                     }
                 } else {
                     if presenter.list.isEmpty {
-                        Text("empty_favorite_message".localized(identifier: "tbadhit.Core"))
+                        Text("Favorite is empty")
                     } else {
                         List {
                             ForEach(presenter.list, id: \.id) { movie in
@@ -64,7 +64,7 @@ struct FavoriteView: View {
                     }
                 }
             }
-            .navigationTitle("favorite_title".localized(identifier: "tbadhit.Core"))
+            .navigationTitle("Favorites")
             .onAppear {
                 self.presenter.getList(request: nil)
         }
