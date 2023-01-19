@@ -8,6 +8,11 @@
 import SwiftUI
 import Core
 import Movie
+import Home
+import Favorite
+import Search
+import Detail
+import Profile
 
 struct ContentView: View {
     @EnvironmentObject var presenter: GetListPresenter<
@@ -44,17 +49,24 @@ struct ContentView: View {
                 MovieTransformer>
         >
     >
+    let router = Router()
     var body: some View {
         TabView {
-            HomeView(presenter: presenter)
+            HomeView<DetailView>(detailRoute: { movie in
+                router.makeDetailView(for: movie)
+            })
                 .tabItem {
                     Label("Home", systemImage: "house.fill")
                 }
-            SearchView(presenter: searchPresenter)
+            SearchView<DetailView>(detailRoute: { movie in
+                router.makeDetailView(for: movie)
+            })
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
-            FavoriteView(presenter: favoritePresenter)
+            FavoriteView<DetailView>(detailRoute: { movie in
+                router.makeDetailView(for: movie)
+            })
                 .tabItem {
                     Label("Favorite", systemImage: "heart")
                 }

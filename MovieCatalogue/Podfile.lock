@@ -7,15 +7,24 @@ PODS:
   - Realm/Headers (10.33.0)
   - RealmSwift (10.33.0):
     - Realm (= 10.33.0)
+  - SDWebImage (5.13.3):
+    - SDWebImage/Core (= 5.13.3)
+  - SDWebImage/Core (5.13.3)
+  - SDWebImageSwiftUI (2.2.1):
+    - SDWebImage (~> 5.10)
   - SwiftLint (0.50.3)
 
 DEPENDENCIES:
   - Alamofire
   - Core (from `https://github.com/tbadhit/Modularization-Core-Module.git`)
   - RealmSwift (~> 10)
+  - SDWebImageSwiftUI
   - SwiftLint
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SDWebImage
+    - SDWebImageSwiftUI
   trunk:
     - Alamofire
     - Realm
@@ -36,8 +45,10 @@ SPEC CHECKSUMS:
   Core: ee68d4d114163a72391de5a0ec005d81aada8f1d
   Realm: d4f810e161fa2c2c589b9860b6eb09238deacd73
   RealmSwift: cef9946f09f2333a8f2ac8bac4f8de52fb9f5ac3
+  SDWebImage: af5bbffef2cde09f148d826f9733dcde1a9414cd
+  SDWebImageSwiftUI: 2ecf5ab6f574526326b10ecb155e72a88059d0f0
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
 
-PODFILE CHECKSUM: d39b4ffa35f788609fb1f5f035345d522f5a3df3
+PODFILE CHECKSUM: dd5adb6e29edea6a85000742ae7bfacd5a9955ef
 
 COCOAPODS: 1.11.3

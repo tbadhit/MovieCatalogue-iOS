@@ -1,4 +1,5 @@
 # Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '16.0'
 
 use_frameworks!
@@ -11,6 +12,7 @@ target 'MovieCatalogue' do
   pod 'SwiftLint'
   pod 'Alamofire'
   pod 'RealmSwift', '~>10'
+  pod 'SDWebImageSwiftUI'
   pod 'Core', :git => "https://github.com/tbadhit/Modularization-Core-Module.git"
 
   target 'MovieCatalogueTests' do
@@ -25,9 +27,42 @@ target 'MovieCatalogue' do
 end
 
 target 'Movie' do
-  project '../Movie/Movie'
+  project '../Modules/Movie/Movie'
   pod 'SwiftLint'
   pod 'Alamofire'
   pod 'RealmSwift', '~>10'
+  pod 'Core', :git => "https://github.com/tbadhit/Modularization-Core-Module.git"
+end
+
+target 'Home' do
+  project '../Modules/Home/Home'
+  pod 'SwiftLint'
+  pod 'SDWebImageSwiftUI'
+  pod 'Core', :git => "https://github.com/tbadhit/Modularization-Core-Module.git"
+end
+
+target 'Favorite' do
+  project '../Modules/Favorite/Favorite'
+  pod 'SwiftLint'
+  pod 'SDWebImageSwiftUI'
+  pod 'Core', :git => "https://github.com/tbadhit/Modularization-Core-Module.git"
+end
+
+target 'Search' do
+  project '../Modules/Search/Search'
+  pod 'SwiftLint'
+  pod 'SDWebImageSwiftUI'
+  pod 'Core', :git => "https://github.com/tbadhit/Modularization-Core-Module.git"
+end
+
+target 'Profile' do
+  project '../Modules/Profile/Profile'
+  pod 'SwiftLint'
+end
+
+target 'Detail' do
+  project '../Modules/Detail/Detail'
+  pod 'SwiftLint'
+  pod 'SDWebImageSwiftUI'
   pod 'Core', :git => "https://github.com/tbadhit/Modularization-Core-Module.git"
 end
